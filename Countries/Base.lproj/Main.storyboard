@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Countries Table View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Countries Table View" id="BYZ-38-t0r" customClass="CountryDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UITableView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sDn-gT-Xgx">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellid" rowHeight="99" id="i1p-o1-Qxm" customClass="CountryTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="99"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i1p-o1-Qxm" id="ZAb-Fq-lUS">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="98.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-z5-rIV">
+                                                    <rect key="frame" x="115" y="19" width="205" height="0.0"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qk-eS-2cH">
+                                                    <rect key="frame" x="15" y="11" width="92" height="77"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="92" id="nte-zf-yWV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sK1-Z3-1Rg">
+                                                    <rect key="frame" x="115" y="27" width="205" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dJb-z5-rIV" firstAttribute="top" secondItem="ZAb-Fq-lUS" secondAttribute="topMargin" constant="8" id="3WW-2H-ggv"/>
+                                                <constraint firstItem="dJb-z5-rIV" firstAttribute="leading" secondItem="2qk-eS-2cH" secondAttribute="trailing" constant="8" symbolic="YES" id="5mC-bM-LDg"/>
+                                                <constraint firstItem="sK1-Z3-1Rg" firstAttribute="leading" secondItem="2qk-eS-2cH" secondAttribute="trailing" constant="8" symbolic="YES" id="D2P-y4-Job"/>
+                                                <constraint firstItem="2qk-eS-2cH" firstAttribute="bottom" secondItem="ZAb-Fq-lUS" secondAttribute="bottomMargin" id="Egy-Bl-y3x"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sK1-Z3-1Rg" secondAttribute="trailing" constant="8" id="JgU-2v-dLb"/>
+                                                <constraint firstItem="2qk-eS-2cH" firstAttribute="top" secondItem="ZAb-Fq-lUS" secondAttribute="topMargin" id="RnC-A1-pPa"/>
+                                                <constraint firstItem="dJb-z5-rIV" firstAttribute="leading" secondItem="2qk-eS-2cH" secondAttribute="trailing" constant="8" id="fUn-OD-IFP"/>
+                                                <constraint firstItem="sK1-Z3-1Rg" firstAttribute="leading" secondItem="2qk-eS-2cH" secondAttribute="trailing" constant="8" id="g5L-ol-RA2"/>
+                                                <constraint firstItem="2qk-eS-2cH" firstAttribute="leading" secondItem="ZAb-Fq-lUS" secondAttribute="leadingMargin" id="j4f-GG-70J"/>
+                                                <constraint firstItem="sK1-Z3-1Rg" firstAttribute="top" secondItem="dJb-z5-rIV" secondAttribute="bottom" constant="8" id="yao-bj-eUa"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dJb-z5-rIV" secondAttribute="trailing" constant="8" id="ysa-Kd-Spy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryImage" destination="2qk-eS-2cH" id="RnM-1o-Xii"/>
+                                            <outlet property="countryNameLabel" destination="dJb-z5-rIV" id="V0B-W1-Gvu"/>
+                                            <outlet property="countryRegionLabel" destination="sK1-Z3-1Rg" id="hcE-Ce-3nh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="133.5832083958021"/>
+        </scene>
+        <!--Country Details View Controller-->
+        <scene sceneID="uaE-LD-KEh">
+            <objects>
+                <viewController id="37T-fz-cBP" customClass="CountryDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuq-KQ-Fmp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XPl-U0-ZcX">
+                                <rect key="frame" x="8" y="28" width="375" height="324.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pEc-9Q-Bnq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="171" id="G22-US-PFP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South Africa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oo4-5f-isY">
+                                        <rect key="frame" x="0.0" y="179" width="138.5" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="OLh-Lw-a79"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bcN-3g-QEX">
+                                        <rect key="frame" x="0.0" y="219" width="233" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha6-CG-dpM">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="0DC-NW-sxV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South African Rand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR5-B6-32y">
+                                                <rect key="frame" x="88" y="0.0" width="145" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zyo-dH-Ev8">
+                                        <rect key="frame" x="0.0" y="247" width="210.5" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spoken Language:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbE-RF-VvR">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="21"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2O-Gz-HVa">
+                                                <rect key="frame" x="156" y="0.0" width="54.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0he-52-B22">
+                                        <rect key="frame" x="0.0" y="276" width="112.5" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqR-mo-ASi">
+                                                <rect key="frame" x="0.0" y="0.0" width="60.5" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Africa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0h-3Q-oWo">
+                                                <rect key="frame" x="68.5" y="0.0" width="44" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wBf-fY-cd3">
+                                        <rect key="frame" x="0.0" y="304" width="237.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBB-lt-TkK">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub sharan African" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-cy-tMh">
+                                                <rect key="frame" x="94.5" y="0.0" width="143" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pEc-9Q-Bnq" secondAttribute="trailing" id="3UH-37-dH8"/>
+                                    <constraint firstItem="pEc-9Q-Bnq" firstAttribute="top" secondItem="XPl-U0-ZcX" secondAttribute="top" id="6TM-vC-o7K"/>
+                                    <constraint firstAttribute="trailing" secondItem="pEc-9Q-Bnq" secondAttribute="trailing" id="CVh-m8-JRD"/>
+                                    <constraint firstItem="wBf-fY-cd3" firstAttribute="top" secondItem="XPl-U0-ZcX" secondAttribute="top" constant="304" id="CqG-XB-gv5"/>
+                                    <constraint firstItem="zyo-dH-Ev8" firstAttribute="top" secondItem="XPl-U0-ZcX" secondAttribute="top" constant="247" id="P79-Bd-hBK"/>
+                                    <constraint firstAttribute="trailing" secondItem="bcN-3g-QEX" secondAttribute="trailing" constant="142" id="eZu-es-Nbh"/>
+                                    <constraint firstItem="0he-52-B22" firstAttribute="top" secondItem="XPl-U0-ZcX" secondAttribute="top" constant="276" id="iSc-UQ-opY"/>
+                                    <constraint firstItem="pEc-9Q-Bnq" firstAttribute="leading" secondItem="XPl-U0-ZcX" secondAttribute="leading" id="xWz-pw-iom"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XPl-U0-ZcX" firstAttribute="trailing" secondItem="ygU-Jc-kaz" secondAttribute="trailing" constant="8" id="01i-w8-GRU"/>
+                            <constraint firstItem="XPl-U0-ZcX" firstAttribute="top" secondItem="ygU-Jc-kaz" secondAttribute="top" constant="8" id="aho-kD-ygC"/>
+                            <constraint firstItem="XPl-U0-ZcX" firstAttribute="leading" secondItem="ygU-Jc-kaz" secondAttribute="leading" constant="8" id="sMq-xf-4eg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ygU-Jc-kaz"/>
+                    </view>
+                    <connections>
+                        <outlet property="countryNameLabel" destination="oo4-5f-isY" id="SMo-lD-eBt"/>
+                        <outlet property="currencyLabel" destination="vR5-B6-32y" id="Lcq-lj-AlX"/>
+                        <outlet property="languageLabel" destination="p2O-Gz-HVa" id="Bq7-uH-rHM"/>
+                        <outlet property="regionLabel" destination="K0h-3Q-oWo" id="rzu-Sk-Yib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0q-h8-QR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
