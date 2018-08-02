@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CountryDetailsViewController.h
 //  Countries
 //
 //  Created by Sashen Pillay on 2018/08/01.
@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Country.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
+@interface CountryDetailsViewController : UIViewController
+    @property NSInteger *index;
 @end
-
